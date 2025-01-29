@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6e32b16951.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Vite App</title>
+</head>
+
+<body class="">
+  <main class=" relative flex flex-col md:flex-row gap-4 overflow-hidden min-h-screen">
+
+    <div class="relative pb-44 md:pb-0 flex-grow max-w-[30rem] ">
+      <div
+        class="min-h-[25rem] max-w-[30rem] md:min-h-[35rem] md:max-w-[50rem] cyli rounded-br-[12.5rem] md:rounded-br-[20rem] rounded-bl-[12.5rem] md:rounded-bl-[20rem] -translate-x-1/2 md:-translate-x-[20%]  lg:-translate-x-[10%] lg:min-h-[35rem] lg:min-w-[30rem] lg:rounded-bl-[17rem] lg:rounded-br-[17rem] ">
+      </div>
+      <!-- phone -->
+      <div
+        class="absolute phone   top-[20%] md:top-[10%] left-0 right-0  m-auto sm:left-[30%] md:left-[26%] abovemd:left-[40%] lg:left-[50%] xl:left-[80%] sm:right-auto  border-solid border-[8px] border-white rounded-2xl ">
+
+        <!-- purple header section -->
+        <div class=" relative screen-header py-4 flex justify-between items-center rounded-xl px-2">
+
+          <div class="absolute bg-white rounded-xl p-2 w-[50%] top-0 left-0 right-0 m-auto -translate-y-1/2"></div>
+
+          <div class="flex items-center gap-[0.3rem]">
+            <button class="text-white"><i class='bx bx-chevron-left'></i></button>
+            <div class="h-5 w-5 rounded-full overflow-hidden border-solid border-[1px] ">
+              <img class="object-cover h-full" src="./src/assets/avatar.jpg" alt="avatar">
+            </div>
+            <div class="leading-none">
+              <span class="block text-[0.65rem]  text-white">Samuel Green</span>
+              <span class="text-[0.6rem]  text-[var(--grayish-blue)]">Available for work</span>
+            </div>
+          </div>
+
+          <button class="text-white"><i class='bx bx-dots-vertical-rounded'></i></button>
+        </div>
+        <!-- purple header section end -->
+
+
+        <!-- phone body -->
+        <div class="flex flex-col gap-2 mt-2 p-2">
+
+          <div class="replies">
+            <p class="text-[0.65rem]">
+              That sounds great. I'd be
+              happy to discuss more.
+            </p>
+          </div>
+
+          <div class="replies">
+            <p class="text-[0.65rem]">
+              Could you send over some
+              pictures of your dog, please?
+            </p>
+          </div>
+
+          <div class="flex gap-1 justify-end">
+            <div class="dogs"><img src="./src/assets/dog-image-1.jpg" alt="dog"></div>
+            <div class="dogs"><img src="./src/assets/dog-image-2.jpg" alt="dog"></div>
+            <div class="dogs"><img src="./src/assets/dog-image-3.jpg" alt="dog"></div>
+          </div>
+
+          <div class="max-w-[9.5rem] p-1 rounded-md leading-none ml-auto bg-white">
+            <p class="text-[0.65rem]">
+              Here are a few pictures. She's
+              a happy girl!
+            </p>
+          </div>
+
+          <div class="max-w-[9.5rem] p-1 rounded-md leading-none ml-auto bg-white">
+            <p class="text-[0.65rem]">
+              Can you make it ?
+            </p>
+          </div>
+
+          <div class="replies">
+            <p class="text-[0.65rem] leading-3">
+              She looks so happy! The time
+              we discussed works. How
+              long shall I take her out for?
+            </p>
+          </div>
+
+          <div class=" pricing">
+            <label class="text-[var(--light-grayish-violet)]" for="thirty-min">
+              <input class="mr-2" type="radio" name="thirty-min" id="thirty-min">
+              30 minute walk
+            </label>
+            <span class="text-white font-bold">$29</span>
+          </div>
+
+          <div class=" pricing">
+            <label class="text-[var(--light-grayish-violet)]" for="sixty-min">
+              <input class="mr-2" type="radio" name="sixty-min" id="sixty-min">
+              1 hour walk
+            </label>
+            <span class="text-white font-bold">$49</span>
+          </div>
+          <div class=" relative mb-2 flex justify-center">
+            <input class="w-[99%] rounded-xl bg-white text-[0.65rem] p-1 focus:outline-none text-wrap" type="text"
+              name="chat" id="chat" placeholder="Type a message...">
+            <button
+              class="absolute top-0 right-1 h-[1.45rem] w-[1.45rem] bg-[var(--very-dark-desaturated-violet)] rounded-full text-white flex justify-center items-center">
+              <i class='bx bx-chevron-right'></i>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- phone body end -->
+
+      </div>
+      <!-- phone end -->
+    </div>
+
+    <!-- section 2 -->
+    <div
+      class=" relative flex flex-col items-center  gap-2 mt-8 descr-text mx-auto pb-8 md:mt-auto md:mb-auto md:items-start">
+      <h1 class="font-bold xl:mb-8 text-xl sm:text-2xl text-[var(--very-dark-desaturated-violet)] xl:text-4xl xl:font-medium">Simple booking</h1>
+      <p class="text-center text-sm sm:text-base text-[var(--dark-grayish-violet)] md:text-start lg:text-lg ">
+        Stay in touch with our dog walkers
+        through the chat interface. This makes it
+        easy to discuss arrangements and make
+        bookings. Once the walk has been
+        completed you can rate your walker and
+        book again all through the chat.
+      </p>
+
+    </div>
+    <div class="hidden xl:block absolute bottom-0 right-0 min-h-[35rem] min-w-[30rem]  bg-[#f9f4fa]  -z-10 rounded-tr-[17rem] rounded-tl-[17rem] translate-x-[50%]"></div>
+
+
+
+
+
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+@theme{
+    --breakpoint-abovemd:53.125rem;
+}
+:root {
+    --pale-violet: hsl(276, 100%, 81%);
+    --moderate-violet: hsl(276, 55%, 52%);
+    --desaturated-dark-violet: hsl(271, 15%, 43%);
+    --grayish-blue: hsl(206, 6%, 79%);
+    --dark-grayish-violet: hsl(270, 7%, 64%);
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --very-light-magenta: hsl(289, 100%, 72%);
+    --lavender:hsl(272, 41%, 93%) ;
+}
+
+body {
+    font-family: 'Rubik', serif;
+}
+.cyli{
+    background-image:linear-gradient(to bottom, var(--light-magenta),var(--light-violet));
+   
+}
+.screen-header {
+    background: linear-gradient(to right,var(--light-violet), var(--light-magenta));
+    
+}
+ .pricing{
+    @apply flex text-[0.65rem]  py-[0.5rem] rounded-bl-none  rounded-md justify-between px-4 max-w-[11rem];
+    background: linear-gradient(to left,var(--light-violet), var(--light-magenta));
+    
+}
+.phone{
+    width: min(calc(100% - 2rem), 230px);
+    min-width: 13.75rem;
+    background-color: var(--light-grayish-violet);
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.replies{
+    @apply max-w-[9.5rem] p-1 rounded-md leading-none  bg-[var(--lavender)]
+     text-[var(--moderate-violet)];
+}
+.dogs  {
+    @apply h-8 w-8 rounded-md overflow-hidden;
+}
+.descr-text{
+    width: min(calc(100% - 2rem), 20rem);
+    
+}
+@media (min-width:768px){
+    .descr-text{
+        width: min(calc(100% - 2rem),28rem);
+        
+    }
+}
+@media (min-width:1024px){
+    .descr-text{
+        width: min(calc(100% - 2rem),32rem);
+        
+    }
+}
+
+/* min-[850px] */
